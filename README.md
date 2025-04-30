@@ -1,42 +1,41 @@
-# WARNING: This project can be considered unmaintained. I will probably create a completely new project with better code and more features in another language.
+# GELİŞTİRİCİ NOTU: Bu proje askıya alınmış olarak kabul edilebilir. Muhtemelen başka bir dilde daha iyi kod ve daha fazla özellik içeren tamamen yeni bir proje oluşturacağım.
 
--   #### Forked from [_the hour booster made by klorik_](https://www.unknowncheats.me/forum/cs-go-releases/201270-ez-steam-hours-booster-nodejs-steamguard-2fa.html).
+# Steam Oyun Saati Artırıcı, 2FA desteğine sahip bilgisayarınızda veya sunucuda çalıştırabileceğiniz basit bir Steam saat artırma botu'dur.
 
-# vaporBooster, a simple Steam hour booster with 2FA support
+Bu [**NodeJS**](https://nodejs.org/en/download/) betiğiyle 2FA desteğiyle, aynı anda birden fazla steam hesabının oyun saatlerini artırın!  
+_(Ve paylaşılabilir gizli anahtarı kullanmak gerekli değildir)_
 
-Boost multiple account with this [**NodeJS**](https://nodejs.org/en/download/) script with 2FA support!  
-_(And it is not necessary to use the shared secret key)_
-
-## Installation
+## Nasıl kurulur?
 
 ```bash
-# Install dependencies ⌨️
+# Bağımlılıkları yükleyin ⌨️
 $ npm install
 ```
 
-## Startup
+## Nasıl çalıştırılır?
 
 ```bash
-# Start the booster 🎉
+# Botu başlatın 🎉
 $ npm run start
 ```
 
-## Example of the config (config/accounts.js)
+## config/accounts.js dosyasındaki yapılandırma örneği
 
 ```javascript
+var configsArray = []; // Bu kodu değiştirmeyin veya silmeyin!
+var config; // Bu kodu değiştirmeyin veya silmeyin!
+
+// Account 1
 config = {};
-config.username = 'username'; // Account username
-config.password = 'password'; // Account password
-config.sharedSecret = ''; // Shared secret (2FA only), leave it blank for steam guard code
-config.enableStatus = true; // Set it to false if you want to stay invisible
-config.gamesAndStatus = [
-	'Boosting hours...', // Your custom status (counts as a game, you can only boost 31 games with the custom status)
-	730,
-	440,
-	570,
-]; // IDs of the games, separated by comma
-config.replyMessage = ''; // Leave it blank for no reply message
-config.receiveMessages = false; // Do you want to log the messages that you receive in the terminal?
-config.saveMessages = false; // Do you want to save the messages that you receive in a file?
+config.username = 'Hesap_Adınız';
+config.password = 'Hesap_Parolanız';
+config.sharedSecret = '';
+config.enableStatus = true;
+config.gamesAndStatus = ['Half-Life 3', 10, 70, 240, 440, 570, 730, 218230, 252490, 578080, 1085660, 1172470, 1962663, 552990,];
+config.replyMessage = 'Steam oyun saatlerimi arttırmak için boşta bekliyorum.';
+config.receiveMessages = false;
+config.saveMessages = false;
 configsArray.push(config);
+
+module.exports = configsArray; // Bu kodu değiştirmeyin veya silmeyin!
 ```
