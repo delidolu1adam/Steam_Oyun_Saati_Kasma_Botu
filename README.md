@@ -11,6 +11,34 @@ Bu proje askıya alınmış olarak kabul edilebilir. Muhtemelen başka bir dilde
 ```bash
 $ npm install
 ```
+## Popüler oyun kimlikleri
+```bash
+10 = Counter-Strike
+70 = Half-Life
+80 = Counter-Strike Zero
+220 = Half-Life 2
+240 = Counter-Strike: Source
+440 = Team Fortress 2
+570 = Dota 2
+730 = Counter-Strike 2
+218230 = PlanetSide 2
+252490 = Rust
+578080 = PUBG
+1063730 = New World
+1085660 = Destiny 2
+1172470 = Apex Legend
+1517290 = Battlefield™ 2042
+1962663 = C.O.D Warzone
+2073850 = The Finals
+```
+
+## Oyun kimliğini nasıl öğrenebilirim?
+```bash
+1: Steam mağaza sayfasını açın.
+2: Arama kutusuna Rust yazın ve oyun sayfasını açın.
+3: Açılan sayfada adres çubuğundaki URL şu şekilde olmalıdır: https://store.steampowered.com/app/252490/Rust/
+4: URL içindeki bu "252490" numaralar oyunun benzersiz steam kimliğidir.
+```
 
 ## Örnek config/accounts.js yapılandırması
 ```javascript
