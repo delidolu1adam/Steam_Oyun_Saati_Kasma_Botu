@@ -114,8 +114,13 @@ Bilgisayar açıldığında botun otomatik olarak başlamasını istiyorsanız a
 - İlk olarak, botun kurulu olduğu dizindeki `Başlat.bat` dosyasına `SHIFT` tuşuna basılı tutarak sağ tıklayın ve `Kısayol oluştur` seçeneğine tıklayın.
 - Oluşturulan kısayolun adı varsayılan olarak `Başlat.bat - Kısayol` olacaktır.
 - Bu dosyaya tekrar sağ tıklayın ve Yeniden adlandır seçeneğini kullanarak adını `Başlat.bat` olarak değiştirin. Sonundaki `- Kısayol` ifadesi tamamen kaldırılmalıdır.
-- Dosya Gezgini’ni açın ve adres çubuğuna şu yolu yapıştırıp `ENTER` tuşuna basın:
-`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`
+- Dosya Gezgini’ni açın ve adres çubuğuna aşağıdaki yolu yapıştırıp `ENTER` tuşuna basın:
+```bash
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+```
+```bash
+C:\Users\KULLANICI-ADINIZ\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
 - Oluşturmuş olduğunuz kısayol dosyasını `CTRL + X` ile kesin ve ardından yukarıdaki `Startup` klasörünün içinde `CTRL + V` tuşlarına basarak yapıştırın.
 
 
