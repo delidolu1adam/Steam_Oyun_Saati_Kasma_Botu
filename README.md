@@ -1,46 +1,64 @@
-# Bot Hakkında
+ℹ️ Hakkında
+=========================
 Steam Oyun Saati Artırıcı, 2FA desteğine sahip "kişisel bilgisayarınızda" veya "sunucuda" çalıştırabileceğiniz basit ve güvenli bir Steam saat artırma botu'dur.
 
-# Geliştirici Notu
-Bu proje askıya alınmış olarak kabul edilebilir. Muhtemelen başka bir dilde daha iyi kod ve daha fazla özellik içeren tamamen yeni bir proje oluşturacağım.
-
-## NodeJS'yi yükleyin
+⬇️ NodeJS'yi yükleyin
+=========================
 İlk olarak [**NodeJS**](https://nodejs.org/tr/download/)'nin son sürümünü resmi web sitesinden indirin ve bilgisayarınıza kurun. 
 
-## Bağlılıkları yükleyin
-```bash
-$ npm install
-```
-## Popüler oyun kimlikleri
-```bash
-10 = Counter-Strike
-70 = Half-Life
-80 = Counter-Strike Zero
-220 = Half-Life 2
-240 = Counter-Strike: Source
-440 = Team Fortress 2
-570 = Dota 2
-730 = Counter-Strike 2
-218230 = PlanetSide 2
-252490 = Rust
-578080 = PUBG
-1063730 = New World
-1085660 = Destiny 2
-1172470 = Apex Legend
-1517290 = Battlefield™ 2042
-1962663 = C.O.D Warzone
-2073850 = The Finals
-```
+🕸️ NodeJS bağlılıklarını yükleyin
+=========================
+- NodeJS bağlılıklarını yüklemek için sadece `npm install` yeterlidir. Ancak bazı durumlarda yetkilendirme ve imza izinleri eksik olabilir.
+- Bu yüzden böyle bir hata ile karşılaşırsanız önce `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` komutunu çalıştırın. Ardından `npm install` komutunu çalıştırarak sorunsuz ilerleyebilirsiniz.
 
-## Oyun kimliğini nasıl öğrenebilirim?
-```bash
-1: Steam mağaza sayfasını açın.
-2: Arama kutusuna Rust yazın ve oyun sayfasını açın.
-3: Açılan sayfada adres çubuğundaki URL şu şekilde olmalıdır: https://store.steampowered.com/app/252490/Rust/
-4: URL içindeki bu "252490" numaralar oyunun benzersiz steam kimliğidir.
-```
+🎮 Popüler oyun kimlikleri
+=========================
+Arc Raiders: `1808500`
 
-## Örnek config/accounts.js yapılandırması
+Counter-Strike: `10`
+
+Half-Life: `70`
+
+Counter-Strike Zero: `80`
+
+Half-Life 2: `220`
+
+Counter-Strike: Source: `240`
+
+Team Fortress 2: `440`
+
+Dota 2: `570`
+
+Counter-Strike 2: `730`
+
+PlanetSide 2: `218230`
+
+Rust: `252490`
+
+PUBG: `578080`
+
+Destiny 2: `1085660`
+
+Apex Legend: `1172470`
+
+Battlefield™ 2042: `1517290`
+
+Battlefield™ 6: `2807960`
+
+C.O.D Warzone: `1962663`
+
+The Finals: `2073850`
+
+🆔 Oyun kimliğini nasıl öğrenebilirim?
+=========================
+- Steam mağaza sayfasını açın.
+- Arama kutusuna Rust yazın ve oyun sayfasını açın.
+- Açılan sayfada adres çubuğundaki URL şu şekilde olmalıdır: https://store.steampowered.com/app/252490/Rust/
+- URL içindeki bu "252490" numaralar oyunun benzersiz steam kimliğidir.
+
+
+▶️ Örnek config/accounts.js yapılandırması
+=========================
 ```javascript
 // Bu kodları değiştirmeyin veya silmeyin!
 var configsArray = []; 
@@ -71,10 +89,36 @@ configsArray.push(config);
 module.exports = configsArray;
 ```
 
-## Botu çalıştırın
+🫳 Botu elle çalıştırın
+=========================
 ```bash
-$ npm run start
+npm run start
 ```
+
+⌨️ Botu komut dosyası ile çalıştırın
+=========================
+Bot ana dizinde Başlat.cmd adında bir dosya oluşturun.
+Daha sonra aşağıdaki kod satırını içine yapıştırın ve kaydedin.
+
+```bash
+@echo off
+npm run start
+```
+
+Bu komut dosyası ile kod girmeden botu başlatabilirsiniz.
+
+❤️ Botu otomatik olarak başlat
+=========================
+Bilgisayar açıldığında botun otomatik olarak başlamasını istiyorsanız aşağıdaki adımları sırasıyla uygulayın.
+
+- İlk olarak, botun kurulu olduğu dizindeki Başlat.bat dosyasına `SHIFT` tuşuna basılı tutarak sağ tıklayın ve `Kısayol oluştur` seçeneğine tıklayın.
+- Oluşturulan kısayolun adı varsayılan olarak `Başlat.bat - Kısayol` olacaktır.
+- Bu dosyaya tekrar sağ tıklayın ve Yeniden adlandır seçeneğini kullanarak adını `Başlat.bat` olarak değiştirin. Sonundaki `- Kısayol` ifadesi tamamen kaldırılmalıdır.
+- Dosya Gezgini’ni açın ve adres çubuğuna şu yolu yapıştırıp `ENTER` tuşuna basın:
+`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`
+- Oluşturduğunuz kısayol dosyasını `CTRL + X` ile kesin ve ardından bu klasöre gidip `CTRL + V` ile yapıştırın.
+
+
 
 
 
