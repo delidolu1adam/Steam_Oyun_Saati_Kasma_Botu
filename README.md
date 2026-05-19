@@ -111,12 +111,12 @@ Bu komut dosyası ile kod girmeden botu başlatabilirsiniz.
 =========================
 Bilgisayar açıldığında botun otomatik olarak başlamasını istiyorsanız aşağıdaki adımları sırasıyla uygulayın.
 
-- İlk olarak, botun kurulu olduğu dizindeki Başlat.bat dosyasına `SHIFT` tuşuna basılı tutarak sağ tıklayın ve `Kısayol oluştur` seçeneğine tıklayın.
+- İlk olarak, botun kurulu olduğu dizindeki `Başlat.bat` dosyasına `SHIFT` tuşuna basılı tutarak sağ tıklayın ve `Kısayol oluştur` seçeneğine tıklayın.
 - Oluşturulan kısayolun adı varsayılan olarak `Başlat.bat - Kısayol` olacaktır.
 - Bu dosyaya tekrar sağ tıklayın ve Yeniden adlandır seçeneğini kullanarak adını `Başlat.bat` olarak değiştirin. Sonundaki `- Kısayol` ifadesi tamamen kaldırılmalıdır.
 - Dosya Gezgini’ni açın ve adres çubuğuna şu yolu yapıştırıp `ENTER` tuşuna basın:
 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`
-- Oluşturduğunuz kısayol dosyasını `CTRL + X` ile kesin ve ardından bu klasöre gidip `CTRL + V` ile yapıştırın.
+- Oluşturmuş olduğunuz kısayol dosyasını `CTRL + X` ile kesin ve ardından yukarıdaki `Startup` klasörünün içinde `CTRL + V` tuşlarına basarak yapıştırın.
 
 
 
